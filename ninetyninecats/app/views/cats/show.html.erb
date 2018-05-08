@@ -1,0 +1,6 @@
+<h1>🐈CAT INFO!!🐈</h1>
+<p><a href='<%= cats_url %>'>Cats list</a>
+<table>
+  <%= render 'cat_headers' %>
+  <%= render 'cat', cat: @cat, page_origin: :show %>
+</table>

@@ -1,0 +1,8 @@
+<h1>🐈ALL OUR CATS 🐈</h1>
+<a href="<%=new_cat_url%>">Add your cat to our database!😻</a>
+<table>
+  <%= render 'cat_headers' %>
+  <% @cats.each do |cat| %>
+    <%= render 'cat', cat: cat, page_origin: :index %>
+  <% end %>
+</table>

@@ -1,0 +1,12 @@
+<tr>
+  <% if page_origin == :index %>
+    <td><a href="<%= cat_url(cat)%>"><%= cat.name %></a></td>
+  <% else %>
+    <td><%= cat.name %></td>
+  <% end %>
+  <td><%= cat.age %></td>
+  <td><%= cat.birth_date %></td>
+  <td><%= cat.color %></td>
+  <td><%= cat.sex %></td>
+  <td><%= cat.description %></td>
+</tr>
